@@ -6,32 +6,29 @@ const Body = () => {
   const [questionActual, setQuestionActual] = React.useState(0);
   const [puntuacion, setPuntuacion] = React.useState(0);
   const [isFinished, setIsFinished] = React.useState(false);
+  const [tiempoRestante, setTiempoRestante] = React.useState(60);
+  const [areDisabled, setAreDisabled] = React.useState(false);
 
   function handleAnswerSummit(isCorrect, e) {
     //Add score
     if (isCorrect) setPuntuacion(puntuacion + 1);
-    //Add questions styles
-    e.target.classList.add(isCorrect ? "correct" : "incorrect");
     // Add change next questions
     if (questionActual === Questions.length - 1) {
       setIsFinished(true);
     } else {
       setQuestionActual(questionActual + 1);
+      //Change times
+      setTiempoRestante(60);
     }
   }
 
-  // const handleAnswerSummit = (isCorrect, e) => {
-  //   if (isCorrect) setPuntuacion(puntuacion + 1);
-  //   e.target.classList.add(isCorrect ? "correct" : "incorrect");
-  //   setTimeout(() => {
-  //     if (questionActual === Questions.length - 1) {
-  //       setIsFinished(true);
-  //     } else {
-  //       //Cambiamos a la pregunta actual a la otra
-  //       setQuestionActual(questionActual + 1);
-  //     }
-  //   }, 100);
-  // };
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      if (tiempoRestante > 0) setTiempoRestante((prev) => prev - 1);
+      if (tiempoRestante === 0) setAreDisabled(true);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [tiempoRestante]);
 
   if (isFinished) {
     return (
@@ -62,13 +59,34 @@ const Body = () => {
           Preguta {questionActual + 1} de {Questions.length}
         </div>
         <div className="titulo-pregunta">{Questions[questionActual].title}</div>
+        {!areDisabled ? (
+          <>
+            <div>Tiempo restante</div>
+            <div>{tiempoRestante} </div>
+          </>
+        ) : (
+          <>
+            <p>Se te acabo el tiempo</p>
+            <button
+              className="buttonContinue"
+              onClick={() => {
+                setTiempoRestante(60);
+                setAreDisabled(false);
+                setQuestionActual(questionActual + 1);
+              }}
+            >
+              Continuemos
+            </button>
+          </>
+        )}
       </div>
       <div className="side-options">
         {Questions[questionActual].options.map((answer, index) => (
           <button
+            disabled={areDisabled}
             key={index}
             onClick={(e) => handleAnswerSummit(answer.isCorrect, e)}
-            // onClick={(e) => handleAnswerSummit(answer.isCorrect, e)}
+            className="button"
           >
             {answer.textAnswer}
           </button>

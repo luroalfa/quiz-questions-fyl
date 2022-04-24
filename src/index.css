@@ -28,7 +28,6 @@ span{
   flex-direction: row;
   justify-content: center;
   color: white;
-  width: 60%;
   height: 100%;
   margin: 0 auto;
   align-items: center;
@@ -47,6 +46,14 @@ span{
   margin-top: 20px;
 }
 
+.side-questions{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .side-options{
   display: flex;
   flex-direction: column;
@@ -57,7 +64,7 @@ span{
   margin: 10px;
 }
 
-button{
+.button{
   width: 200px;
   height: 80px;
   font-size: 16px;
@@ -72,19 +79,25 @@ button{
   cursor: pointer;
   text-align: center;
 }
+.buttonContinue{
+  width: 200px;
+  height: 100%;
+  font-size: 16px;
+  color: #000000;
+  background-color: #f2ff03;
+  border-radius: 20px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+  text-align: center;
+}
 .titulo-pregunta{
   font-size: 1.3em;
   font-weight: bold;
 }
-
-/* .correct{
-  background-color:rgb(37, 141, 37);
-}
-.incorrect{
-  background-color:rgb(161, 0, 0);
-} */
-
-
 
 
 
