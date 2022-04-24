@@ -179,6 +179,33 @@ const preguntas = [
       { textAnswer: "Puntarenas", isCorrect: false },
     ]
   },
+  {
+    titulo: 'Como se les llama a las ciudades mas importantes de un Cantón?',
+    opciones: [
+      { textAnswer: "Urbanizaciones", isCorrect: false },
+      { textAnswer: "Paises", isCorrect: false },
+      { textAnswer: "Distritos", isCorrect: true },
+      { textAnswer: "Barrios", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'Rescatan personas y apagan incendios?',
+    opciones: [
+      { textAnswer: "Policias", isCorrect: false },
+      { textAnswer: "Cruz Roja", isCorrect: false },
+      { textAnswer: "Farmacias", isCorrect: false },
+      { textAnswer: "Bomberos", isCorrect: true },
+    ]
+  },
+  {
+    titulo: 'Ofrecen distintos servicios a la poblacion',
+    opciones: [
+      { textAnswer: "Centro de salud", isCorrect: false },
+      { textAnswer: "Biblioteca", isCorrect: false },
+      { textAnswer: "Centro Comercial", isCorrect: true },
+      { textAnswer: "Supermercado", isCorrect: false },
+    ]
+  },
 ];
 
 export default preguntas;
