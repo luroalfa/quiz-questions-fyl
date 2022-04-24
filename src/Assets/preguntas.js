@@ -180,11 +180,11 @@ const preguntas = [
     ]
   },
   {
-    titulo: 'Como se les llama a las ciudades mas importantes de un Cantón?',
+    titulo: 'Como se llama a la ciudad mas importante de un cantón?',
     opciones: [
       { textAnswer: "Urbanizaciones", isCorrect: false },
       { textAnswer: "Paises", isCorrect: false },
-      { textAnswer: "Distritos", isCorrect: true },
+      { textAnswer: "Cabecera de cantón.", isCorrect: true },
       { textAnswer: "Barrios", isCorrect: false },
     ]
   },
