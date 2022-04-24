@@ -19,7 +19,7 @@ const Body = () => {
     }, 100);
   };
 
-  if (isFinished)
+  if (isFinished) {
     return (
       <div className="bodyQuestionsFinished">
         <div>Juego terminado</div>
@@ -36,6 +36,8 @@ const Body = () => {
         </button>
       </div>
     );
+  }
+
   return (
     <div className="bodyQuestions">
       <div className="side-questions">
@@ -51,7 +53,6 @@ const Body = () => {
           <button
             key={index}
             onClick={(e) => handleAnswerSummit(answer.isCorrect, e)}
-            className="button-ans"
           >
             {answer.textAnswer}{" "}
           </button>

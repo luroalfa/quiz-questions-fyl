@@ -1,13 +1,17 @@
-
-import './App.css';
-import Body from './Components/Body';
-import Header from './Components/Header';
+import React from "react";
+import Body from "./Components/Body";
+import Header from "./Components/Header";
 
 function App() {
+  const [init, setInit] = React.useState(false);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setInit(true);
+    }, 5000)
+  })
   return (
     <div className="App">
-      <Header />
-      <Body />
+      {(!init) ? <Header /> : <Body />}
     </div>
   );
 }

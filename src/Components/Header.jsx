@@ -1,12 +1,23 @@
 import React from "react";
-import logo from "../logo.svg";
+import ES from "../Assets/EstudiosSociales.svg";
 
 const Header = () => {
   return (
     <>
-      <img src={logo} className="App-logo" alt="logo" />
       <h1>QUIZ!</h1>
       <h2>ESTUDIOS SOCIALES</h2>
+      <div className="spinnerContainer">
+        <div className="loadingContainer">
+          <div className="loader1"></div>
+          <div className="loader2"></div>
+        </div>
+      </div>
+      <h5>Cargando preguntas...</h5>
+      <p>¿Estas preparado?</p>
+      <p>
+        Vamos a sacarnos un <span>100</span> 😉
+      </p>
+      <img src={ES} className="imgES" alt="logo" />
     </>
   );
 };
