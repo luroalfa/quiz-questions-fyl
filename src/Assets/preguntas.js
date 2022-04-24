@@ -156,8 +156,8 @@ const preguntas = [
     titulo: 'Quien se encarga de velar por el bienestar del progreso del canton?',
     opciones: [
       { textAnswer: "Paises", isCorrect: false },
-      { textAnswer: "Cantones", isCorrect: false },
       { textAnswer: "Municipalidades", isCorrect: true },
+      { textAnswer: "Cantones", isCorrect: false },
       { textAnswer: "Distritos", isCorrect: false },
     ]
   },
@@ -165,8 +165,8 @@ const preguntas = [
     titulo: 'Una provincia esta formada por:',
     opciones: [
       { textAnswer: "Paises", isCorrect: false },
-      { textAnswer: "Cantones", isCorrect: false },
-      { textAnswer: "Municipalidades", isCorrect: true },
+      { textAnswer: "Cantones", isCorrect: true },
+      { textAnswer: "Municipalidades", isCorrect: false },
       { textAnswer: "Distritos", isCorrect: false },
     ]
   },
