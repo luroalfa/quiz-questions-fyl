@@ -20,27 +20,36 @@ const preguntas = [
   {
     titulo: 'Mi cantón se llama:',
     opciones: [
-      { textAnswer: "San Jose.", isCorrect: false },
-      { textAnswer: "San Rafael.", isCorrect: false },
+      { textAnswer: "Atenas.", isCorrect: false },
+      { textAnswer: "Grecia.", isCorrect: false },
       { textAnswer: "Alajuela.", isCorrect: true },
-      { textAnswer: "Heredia.", isCorrect: false },
+      { textAnswer: "Guatuso.", isCorrect: false },
     ]
   },
   {
     titulo: 'Mi distrito se llama:',
     opciones: [
-      { textAnswer: "Alajuela.", isCorrect: false },
-      { textAnswer: "San Jose.", isCorrect: false },
+      { textAnswer: "Guácima.", isCorrect: false },
+      { textAnswer: "Garita.", isCorrect: false },
       { textAnswer: "San Rafael.", isCorrect: true },
-      { textAnswer: "Heredia.", isCorrect: false },
+      { textAnswer: "Sarapiquí.", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'Mi escuela esta en el distrito de:',
+    opciones: [
+      { textAnswer: "San Rafael.", isCorrect: true },
+      { textAnswer: "Guácima.", isCorrect: false },
+      { textAnswer: "Garita.", isCorrect: false },
+      { textAnswer: "Sarapiquí.", isCorrect: false },
     ]
   },
   {
     titulo: 'Quienes integran el gobierno local de un canton?',
     opciones: [
       { textAnswer: "Maestros.", isCorrect: false },
-      { textAnswer: "Estudiantes.", isCorrect: false },
       { textAnswer: "Alcades y regidores.", isCorrect: true },
+      { textAnswer: "Estudiantes.", isCorrect: false },
       { textAnswer: "Precidente.", isCorrect: false },
     ]
   },
@@ -49,8 +58,8 @@ const preguntas = [
     opciones: [
       { textAnswer: "Nicaragua.", isCorrect: false },
       { textAnswer: "Alajuela.", isCorrect: false },
-      { textAnswer: "Costa Rica.", isCorrect: true },
       { textAnswer: "Panama.", isCorrect: false },
+      { textAnswer: "Costa Rica.", isCorrect: true },
     ]
   },
   {
@@ -66,8 +75,8 @@ const preguntas = [
     titulo: 'Mi canton tiene cuantos distritos?',
     opciones: [
       { textAnswer: "8", isCorrect: false },
-      { textAnswer: "7", isCorrect: false },
       { textAnswer: "14", isCorrect: true },
+      { textAnswer: "7", isCorrect: false },
       { textAnswer: "6", isCorrect: false },
     ]
   },
@@ -76,8 +85,8 @@ const preguntas = [
     opciones: [
       { textAnswer: "Escuela Enrique Pinto Fernández ", isCorrect: false },
       { textAnswer: "Liceo San Rafael de Alajuela", isCorrect: false },
-      { textAnswer: "Escuela Julia Fernández Rodríguez", isCorrect: true },
       { textAnswer: "Escuela Jesus Sanchez Erazo", isCorrect: false },
+      { textAnswer: "Escuela Julia Fernández Rodríguez", isCorrect: true },
     ]
   },
   {
@@ -90,7 +99,7 @@ const preguntas = [
     ]
   },
   {
-    titulo: 'Cuidan a los habitantes?',
+    titulo: 'Cuidan la salud de los habitantes?',
     opciones: [
       { textAnswer: "Bancos", isCorrect: false },
       { textAnswer: "Centro Comercial", isCorrect: false },
@@ -123,6 +132,51 @@ const preguntas = [
       { textAnswer: "Cruz Rojistas", isCorrect: false },
       { textAnswer: "Policias", isCorrect: true },
       { textAnswer: "Panadeross", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'Cuantas provincias tiene Costa Rica?',
+    opciones: [
+      { textAnswer: "8", isCorrect: false },
+      { textAnswer: "9", isCorrect: false },
+      { textAnswer: "7", isCorrect: true },
+      { textAnswer: "5", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'Atienden emergencias medicas:',
+    opciones: [
+      { textAnswer: "Librerias", isCorrect: false },
+      { textAnswer: "Policias", isCorrect: false },
+      { textAnswer: "Cruz rojistas", isCorrect: true },
+      { textAnswer: "Super mercados", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'Quien se encarga de velar por el bienestar del progreso del canton?',
+    opciones: [
+      { textAnswer: "Paises", isCorrect: false },
+      { textAnswer: "Cantones", isCorrect: false },
+      { textAnswer: "Municipalidades", isCorrect: true },
+      { textAnswer: "Distritos", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'Una provincia esta formada por:',
+    opciones: [
+      { textAnswer: "Paises", isCorrect: false },
+      { textAnswer: "Cantones", isCorrect: false },
+      { textAnswer: "Municipalidades", isCorrect: true },
+      { textAnswer: "Distritos", isCorrect: false },
+    ]
+  },
+  {
+    titulo: 'La provincia donde esta mi escuela se llama:',
+    opciones: [
+      { textAnswer: "Heredia", isCorrect: false },
+      { textAnswer: "San Jóse", isCorrect: false },
+      { textAnswer: "Alajuela", isCorrect: true },
+      { textAnswer: "Puntarenas", isCorrect: false },
     ]
   },
 ];
