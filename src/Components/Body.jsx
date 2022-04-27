@@ -6,7 +6,7 @@ const Body = () => {
   const [questionActual, setQuestionActual] = React.useState(0);
   const [puntuacion, setPuntuacion] = React.useState(0);
   const [isFinished, setIsFinished] = React.useState(false);
-  const [tiempoRestante, setTiempoRestante] = React.useState(60);
+  // const [tiempoRestante, setTiempoRestante] = React.useState(60);
   const [areDisabled, setAreDisabled] = React.useState(false);
 
   function handleAnswerSummit(isCorrect, e) {
@@ -18,17 +18,17 @@ const Body = () => {
     } else {
       setQuestionActual(questionActual + 1);
       //Change times
-      setTiempoRestante(60);
+      // setTiempoRestante(60);
     }
   }
 
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      if (tiempoRestante > 0) setTiempoRestante((prev) => prev - 1);
-      if (tiempoRestante === 0) setAreDisabled(true);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [tiempoRestante]);
+  // React.useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (tiempoRestante > 0) setTiempoRestante((prev) => prev - 1);
+  //     if (tiempoRestante === 0) setAreDisabled(true);
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // }, [tiempoRestante]);
 
   if (isFinished) {
     return (
@@ -61,8 +61,8 @@ const Body = () => {
         <div className="titulo-pregunta">{Questions[questionActual].title}</div>
         {!areDisabled ? (
           <>
-            <div>Tiempo restante</div>
-            <div>{tiempoRestante} </div>
+            {/* <div>Tiempo restante</div> */}
+            {/* <div>{tiempoRestante} </div> */}
           </>
         ) : (
           <>
@@ -70,7 +70,7 @@ const Body = () => {
             <button
               className="buttonContinue"
               onClick={() => {
-                setTiempoRestante(60);
+                // setTiempoRestante(60);
                 setAreDisabled(false);
                 setQuestionActual(questionActual + 1);
               }}

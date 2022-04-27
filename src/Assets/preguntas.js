@@ -138,6 +138,78 @@ const preguntas = [
       { textAnswer: "Incendios y rescates", isCorrect: false },
     ]
   },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
+  {
+    title: '¿?',
+    options: [
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: true },
+      { textAnswer: "", isCorrect: false },
+    ]
+  },
 ];
 
 export default preguntas;
