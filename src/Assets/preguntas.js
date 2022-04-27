@@ -126,7 +126,7 @@ const preguntas = [
     title: '¿Lo bomberos atienden los?',
     options: [
       { textAnswer: "Emergencias y evacuaciones", isCorrect: false },
-      { textAnswer: "Enfermedades y accidentes", isCorrect: true },
+      { textAnswer: "Enfermedades y accidentes", isCorrect: false },
       { textAnswer: "Incendios y rescates", isCorrect: true },
     ]
   },
@@ -134,80 +134,50 @@ const preguntas = [
     title: '¿La cruz roja atienden las?',
     options: [
       { textAnswer: "Emergencias y evacuaciones", isCorrect: true },
-      { textAnswer: "Enfermedades y accidentes", isCorrect: true },
+      { textAnswer: "Enfermedades y accidentes", isCorrect: false },
       { textAnswer: "Incendios y rescates", isCorrect: false },
     ]
   },
   {
-    title: '¿?',
+    title: '¿Describe los cambios en las etapas del desarrollo humano despues del nacimiento?',
     options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
+      { textAnswer: "Vejez, madurez, juventud, adolecencia y niñez.", isCorrect: false },
+      { textAnswer: "Niñez, adolecencia, juventud, madurez y vejez.", isCorrect: true },
+      { textAnswer: "Niñez, vejez, juventud, adolecencia y madurez", isCorrect: false },
     ]
   },
   {
-    title: '¿?',
+    title: '¿Mi hermano mayor tiene 19 años y esta en la etapa de ?',
     options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: false },
+      { textAnswer: "Vejez", isCorrect: false },
+      { textAnswer: "Niñez", isCorrect: false },
+      { textAnswer: "Adolencia", isCorrect: true },
     ]
   },
   {
-    title: '¿?',
+    title: '¿El domingo pasado le cantamos 15 años a mi hermana, ella esta en la etapa?',
     options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: false },
+      { textAnswer: "Adolecencia", isCorrect: true },
+      { textAnswer: "Vejez", isCorrect: false },
+      { textAnswer: "Niñez", isCorrect: false },
     ]
   },
   {
-    title: '¿?',
+    title: '¿En las vacaciones vamos a visitar a mis abuelos que estan en la etapa?',
     options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
+      { textAnswer: "Niñez", isCorrect: false },
+      { textAnswer: "Juventud", isCorrect: false },
+      { textAnswer: "Vejez", isCorrect: true },
     ]
   },
   {
-    title: '¿?',
+    title: '¿Mis compañeros y yo disfrutamos mucho los recreos y estamos en la etapa de la?',
     options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
-    ]
-  },
-  {
-    title: '¿?',
-    options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
-    ]
-  },
-  {
-    title: '¿?',
-    options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
-    ]
-  },
-  {
-    title: '¿?',
-    options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
-    ]
-  },
-  {
-    title: '¿?',
-    options: [
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: true },
-      { textAnswer: "", isCorrect: false },
+      { textAnswer: "Niñez", isCorrect: true },
+      { textAnswer: "Vejez", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: false },
     ]
   },
 ];
