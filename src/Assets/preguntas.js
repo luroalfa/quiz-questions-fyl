@@ -1,209 +1,141 @@
 const preguntas = [
   {
-    title: '¿Que es un Canton?',
+    title: '¿En esta etapa se inicia desde el nacimiento hasta los 12 años?',
     options: [
-      { textAnswer: "Sector diminuto de territorios que unen cantones.", isCorrect: false },
-      { textAnswer: "La union de varias provincias.", isCorrect: false },
-      { textAnswer: "Sector Amplio de territorios que unen varios distritos.", isCorrect: true },
-      { textAnswer: "Varias urbanizaciones.", isCorrect: false },
+      { textAnswer: "Adolecencia.", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: false },
+      { textAnswer: "Infancia", isCorrect: true },
+      { textAnswer: "Juventud.", isCorrect: false },
+      { textAnswer: "Vejez.", isCorrect: false },
     ]
   },
   {
-    title: 'Un distrito está formado por:',
+    title: '¿Esta etapa inicia desde los 30 a los 65 años?',
     options: [
-      { textAnswer: "Países.", isCorrect: false },
-      { textAnswer: "Barrios, urbanizaciones y caseríos.", isCorrect: true },
-      { textAnswer: "Continentes.", isCorrect: false },
-      { textAnswer: "Provincias.", isCorrect: false },
+      { textAnswer: "Adolecencia.", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: true },
+      { textAnswer: "Infancia", isCorrect: false },
+      { textAnswer: "Juventud.", isCorrect: false },
+      { textAnswer: "Vejez.", isCorrect: false },
     ]
   },
   {
-    title: 'Mi cantón se llama:',
+    title: '¿Esta etapa inicia desde los 18 a los 30 años?',
     options: [
-      { textAnswer: "Atenas.", isCorrect: false },
-      { textAnswer: "Grecia.", isCorrect: false },
-      { textAnswer: "Alajuela.", isCorrect: true },
-      { textAnswer: "Guatuso.", isCorrect: false },
+      { textAnswer: "Adolecencia.", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: false },
+      { textAnswer: "Infancia", isCorrect: false },
+      { textAnswer: "Juventud.", isCorrect: true },
+      { textAnswer: "Vejez.", isCorrect: false },
     ]
   },
   {
-    title: 'Mi distrito se llama:',
+    title: '¿Esta etapa inicia desde los 12 a los 18 años?',
     options: [
-      { textAnswer: "Guácima.", isCorrect: false },
-      { textAnswer: "Garita.", isCorrect: false },
-      { textAnswer: "San Rafael.", isCorrect: true },
-      { textAnswer: "Sarapiquí.", isCorrect: false },
+      { textAnswer: "Adolecencia.", isCorrect: true },
+      { textAnswer: "Madurez", isCorrect: false },
+      { textAnswer: "Infancia", isCorrect: false },
+      { textAnswer: "Juventud.", isCorrect: false },
+      { textAnswer: "Vejez.", isCorrect: false },
     ]
   },
   {
-    title: 'Mi escuela esta en el distrito de:',
+    title: '¿Esta etapa inicia desde los 65 hasta que fallece?',
     options: [
-      { textAnswer: "San Rafael.", isCorrect: true },
-      { textAnswer: "Guácima.", isCorrect: false },
-      { textAnswer: "Garita.", isCorrect: false },
-      { textAnswer: "Sarapiquí.", isCorrect: false },
+      { textAnswer: "Adolecencia.", isCorrect: false },
+      { textAnswer: "Madurez", isCorrect: false },
+      { textAnswer: "Infancia", isCorrect: false },
+      { textAnswer: "Juventud.", isCorrect: false },
+      { textAnswer: "Vejez.", isCorrect: true },
     ]
   },
   {
-    title: 'Quienes integran el gobierno local de un canton?',
+    title: '¿Seleccione tres medidas para evitar el contagio del covid 19?',
     options: [
-      { textAnswer: "Maestros.", isCorrect: false },
-      { textAnswer: "Alcades y regidores.", isCorrect: true },
-      { textAnswer: "Estudiantes.", isCorrect: false },
-      { textAnswer: "Precidente.", isCorrect: false },
+      { textAnswer: "Ir enfermo a la escuela, lavarse las manos, no usar mascarilla", isCorrect: false },
+      { textAnswer: "lavarse las manos, usar mascarilla, usar protocolo de tos y estornudo", isCorrect: true },
+      { textAnswer: "No usar mascarilla, guardan la distancia, no lavarse las manos", isCorrect: false },
     ]
   },
   {
-    title: 'Mi país se llama:',
+    title: '¿Cuales son dos carateristicas de la etapa de la adultes?',
     options: [
-      { textAnswer: "Nicaragua.", isCorrect: false },
-      { textAnswer: "Alajuela.", isCorrect: false },
-      { textAnswer: "Panama.", isCorrect: false },
-      { textAnswer: "Costa Rica.", isCorrect: true },
+      { textAnswer: "Inicia a los 18 años, se prepara para formar una familia", isCorrect: false },
+      { textAnswer: "Son más independientes, se hacen más responsables", isCorrect: true },
+      { textAnswer: "Se aprovecha más del tiempo libre, inicia desde los 65 años", isCorrect: false },
     ]
   },
   {
-    title: 'Mi país se encuentra en el continente:',
+    title: '¿Mencione tres accidentes que podemos tener en casa?',
     options: [
-      { textAnswer: "Asia.", isCorrect: false },
-      { textAnswer: "Europa.", isCorrect: false },
-      { textAnswer: "América.", isCorrect: true },
-      { textAnswer: "África.", isCorrect: false },
+      { textAnswer: "Accidente de transito, atropello y asfixia", isCorrect: false },
+      { textAnswer: "Atropello, quemadura y mordedura", isCorrect: false },
+      { textAnswer: "Caida, quemadura y asfixia", isCorrect: true },
     ]
   },
   {
-    title: 'Mi canton tiene cuantos distritos?',
+    title: '¿Tres normas de convivencia son?',
     options: [
-      { textAnswer: "8", isCorrect: false },
-      { textAnswer: "14", isCorrect: true },
-      { textAnswer: "7", isCorrect: false },
-      { textAnswer: "6", isCorrect: false },
+      { textAnswer: "No esperar el turno, gritar al hablar, repetar las cosas de los demás", isCorrect: false },
+      { textAnswer: "Esperar su turno, no botar basura, hablar sin gritar", isCorrect: true },
+      { textAnswer: "Respetar las opiniones de los demás, gritar al hablar, ensuciar la escuela", isCorrect: false },
     ]
   },
   {
-    title: 'Cual es el nombre de su escuela?',
+    title: '¿Cuales son dos carateristicas de la etapa de la madurez?',
     options: [
-      { textAnswer: "Escuela Enrique Pinto Fernández ", isCorrect: false },
-      { textAnswer: "Liceo San Rafael de Alajuela", isCorrect: false },
-      { textAnswer: "Escuela Jesus Sanchez Erazo", isCorrect: false },
-      { textAnswer: "Escuela Julia Fernández Rodríguez", isCorrect: true },
+      { textAnswer: "Se prepara para formar una familia, inicia busqueda de trabajo", isCorrect: false },
+      { textAnswer: "Se tiene mayor estabilidad en el trabajo, inicia a los 30 años", isCorrect: true },
+      { textAnswer: "El cuerpo está en crecimiento, deja de trabajar", isCorrect: false },
     ]
   },
   {
-    title: 'Lugar donde se compran medicamentos?',
+    title: '¿Cuales son dos caracteristicas de la etapa de la infancia?',
     options: [
-      { textAnswer: "Centro Educativo", isCorrect: false },
-      { textAnswer: "Biblioteca", isCorrect: false },
-      { textAnswer: "Mercado", isCorrect: false },
-      { textAnswer: "Farmacia", isCorrect: true },
+      { textAnswer: "Se deja de trabajar, necesitamos de la guia de la familia", isCorrect: false },
+      { textAnswer: "Disfrutamos mucho los recreos e inicia desde el nacimiento", isCorrect: true },
+      { textAnswer: "Inicia a los 18 años, se prepara para formar una familia", isCorrect: false },
     ]
   },
   {
-    title: 'Cuidan la salud de los habitantes?',
+    title: 'Tres medidas de prevencion para evitar un accidente son:',
     options: [
-      { textAnswer: "Bancos", isCorrect: false },
-      { textAnswer: "Centro Comercial", isCorrect: false },
-      { textAnswer: "Centro de Salud", isCorrect: true },
-      { textAnswer: "Panadería", isCorrect: false },
+      { textAnswer: "Fijarse ante de cruzar la calle, no jugar con fuego y no tocar productos quimicos", isCorrect: true },
+      { textAnswer: "No tocar productos quimicos, molestar al perro, comer rapido", isCorrect: false },
+      { textAnswer: "Comer despacio, no molestar al perro, jugar con cuchillos", isCorrect: false },
     ]
   },
   {
-    title: 'Encargados de brindar educación?',
+    title: '¿Dos caracteristicas de la adolecencia son?',
     options: [
-      { textAnswer: "Bancos y tiendas", isCorrect: false },
-      { textAnswer: "Bomberos y policias", isCorrect: false },
-      { textAnswer: "Escuelas y colegios", isCorrect: true },
-      { textAnswer: "Carniceria y verdureria", isCorrect: false },
+      { textAnswer: "Inicia a los 5 años y termina a los 12", isCorrect: false },
+      { textAnswer: "Inicia a los 12 años y se da mas rapido el crecimiento del cuerpo", isCorrect: true },
+      { textAnswer: "Inicia a los 18 años y necesitan la proteccion de la familia", isCorrect: false },
+      { textAnswer: "Inicia a los 65 años hasta que fallece", isCorrect: false },
     ]
   },
   {
-    title: 'Compramos articulos para la escuela?',
+    title: '¿Lo hospitales atienden las?',
     options: [
-      { textAnswer: "Carnicería", isCorrect: false },
-      { textAnswer: "Escuela", isCorrect: false },
-      { textAnswer: "Libreria", isCorrect: true },
-      { textAnswer: "Joyeria", isCorrect: false },
+      { textAnswer: "Emergencias y evacuaciones", isCorrect: false },
+      { textAnswer: "Enfermedades y accidentes", isCorrect: true },
+      { textAnswer: "Incendios y rescates", isCorrect: false },
     ]
   },
   {
-    title: 'Trabajan para que la comunidad sea un lugar seguro?',
+    title: '¿Lo bomberos atienden los?',
     options: [
-      { textAnswer: "Bomberos", isCorrect: false },
-      { textAnswer: "Cruz Rojistas", isCorrect: false },
-      { textAnswer: "Policias", isCorrect: true },
-      { textAnswer: "Panadeross", isCorrect: false },
+      { textAnswer: "Emergencias y evacuaciones", isCorrect: false },
+      { textAnswer: "Enfermedades y accidentes", isCorrect: true },
+      { textAnswer: "Incendios y rescates", isCorrect: true },
     ]
   },
   {
-    title: 'Cuantas provincias tiene Costa Rica?',
+    title: '¿La cruz roja atienden las?',
     options: [
-      { textAnswer: "8", isCorrect: false },
-      { textAnswer: "9", isCorrect: false },
-      { textAnswer: "7", isCorrect: true },
-      { textAnswer: "5", isCorrect: false },
-    ]
-  },
-  {
-    title: 'Atienden emergencias medicas:',
-    options: [
-      { textAnswer: "Librerias", isCorrect: false },
-      { textAnswer: "Policias", isCorrect: false },
-      { textAnswer: "Cruz rojistas", isCorrect: true },
-      { textAnswer: "Super mercados", isCorrect: false },
-    ]
-  },
-  {
-    title: 'Quien se encarga de velar por el bienestar del progreso del canton?',
-    options: [
-      { textAnswer: "Paises", isCorrect: false },
-      { textAnswer: "Municipalidades", isCorrect: true },
-      { textAnswer: "Cantones", isCorrect: false },
-      { textAnswer: "Distritos", isCorrect: false },
-    ]
-  },
-  {
-    title: 'Una provincia esta formada por:',
-    options: [
-      { textAnswer: "Paises", isCorrect: false },
-      { textAnswer: "Cantones", isCorrect: true },
-      { textAnswer: "Municipalidades", isCorrect: false },
-      { textAnswer: "Distritos", isCorrect: false },
-    ]
-  },
-  {
-    title: 'La provincia donde esta mi escuela se llama:',
-    options: [
-      { textAnswer: "Heredia", isCorrect: false },
-      { textAnswer: "San Jóse", isCorrect: false },
-      { textAnswer: "Alajuela", isCorrect: true },
-      { textAnswer: "Puntarenas", isCorrect: false },
-    ]
-  },
-  {
-    title: 'Como se llama a la ciudad mas importante de un cantón?',
-    options: [
-      { textAnswer: "Urbanizaciones", isCorrect: false },
-      { textAnswer: "Paises", isCorrect: false },
-      { textAnswer: "Cabecera de cantón.", isCorrect: true },
-      { textAnswer: "Barrios", isCorrect: false },
-    ]
-  },
-  {
-    title: 'Rescatan personas y apagan incendios?',
-    options: [
-      { textAnswer: "Policias", isCorrect: false },
-      { textAnswer: "Cruz Roja", isCorrect: false },
-      { textAnswer: "Farmacias", isCorrect: false },
-      { textAnswer: "Bomberos", isCorrect: true },
-    ]
-  },
-  {
-    title: 'Ofrecen distintos servicios a la poblacion',
-    options: [
-      { textAnswer: "Centro de salud", isCorrect: false },
-      { textAnswer: "Biblioteca", isCorrect: false },
-      { textAnswer: "Centro Comercial", isCorrect: true },
-      { textAnswer: "Supermercado", isCorrect: false },
+      { textAnswer: "Emergencias y evacuaciones", isCorrect: true },
+      { textAnswer: "Enfermedades y accidentes", isCorrect: true },
+      { textAnswer: "Incendios y rescates", isCorrect: false },
     ]
   },
 ];

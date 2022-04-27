@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <h1>QUIZ!</h1>
-      <h2>ESTUDIOS SOCIALES</h2>
+      <h2>CIENCIAS</h2>
       <div className="spinnerContainer">
         <div className="loadingContainer">
           <div className="loader1"></div>
