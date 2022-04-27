@@ -7,7 +7,7 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
       setInit(true);
-    }, 2000)
+    }, 5000)
   })
   return (
     <div className="App">
